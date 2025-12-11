@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pernyataan Perasaan</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffe4ec;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .fade {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+    .show {
+      opacity: 1;
+    }
+    .hidden {
+      display: none;
+    }
+
+    button {
+      background: #ff4b91;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 220px;
+    }
+    button:hover {
+      opacity: 0.85;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 420px;
+      background: white;
+      padding: 24px 20px;
+      border-radius: 24px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      position: relative;
+      z-index: 10;
+      margin: 0 auto;
+    }
+
+    /* ✨ Screen 2 transparan */
+    .container-transparent {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(4px); /* Efek kaca — aman di mobile modern */
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      line-height: 1.3;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      line-height: 1.5;
+    }
+
+    /* Floating photos background */
+    .floating-photo {
+      position: absolute;
+      width: 110px;
+      border-radius: 12px;
+      opacity: 0.32;
+      filter: blur(1px);
+      pointer-events: none;
+      animation: float 10s ease-in-out infinite;
+      z-index: 1;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-25px) rotate(2deg); }
+    }
+
+    /* Gaya untuk link pesan */
+    .message-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #d6366c;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 17px;
+      padding: 10px 16px;
+      border-radius: 50px;
+      background: rgba(255, 240, 245, 0.6);
+      transition: all 0.3s ease;
+    }
+    .message-link:hover {
+      background: rgba(255, 200, 220, 0.7);
+      color: #ff2f6e;
+      transform: scale(1.03);
+    }
+
+    /* Responsif untuk layar sangat kecil (<320px) */
+    @media (max-width: 320px) {
+      .container {
+        padding: 20px 16px;
+      }
+      button {
+        padding: 11px 20px;
+        font-size: 15px;
+      }
+      .floating-photo {
+        width: 90px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
+
+    /* Responsif untuk tablet */
+    @media (min-width: 768px) {
+      .container {
+        padding: 30px;
+      }
+      button {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FOTO MELAYANG (7 FOTO) -->
+  <img src="foto1.png" class="floating-photo" style="top: 4%; left: 2%; animation-delay: 0s;">
+  <img src="foto2.png" class="floating-photo" style="top: 55%; left: 8%; animation-delay: 1.2s;">
+  <img src="foto3.png" class="floating-photo" style="top: 18%; right: 4%; animation-delay: 2.4s;">
+  <img src="foto4.png" class="floating-photo" style="bottom: 8%; right: 12%; animation-delay: 3.6s;">
+  <img src="foto5.png" class="floating-photo" style="top: 38%; left: 40%; animation-delay: 4.8s;">
+  <img src="foto6.png" class="floating-photo" style="bottom: 4%; left: 25%; animation-delay: 6s;">
+  <img src="foto7.png" class="floating-photo" style="top: 70%; right: 25%; animation-delay: 7.2s;">
+
+  <!-- SCREEN 1 -->
+  <div id="screen1" class="container fade show">
+    <h1>Untuk Ratu ku ada yang ingin kukatakan</h1>
+    <button onclick="next(1)">Lanjut</button>
+  </div>
+
+  <!-- SCREEN 2 (dengan background transparan) -->
+  <div id="screen2" class="container container-transparent fade hidden">
+    <div style="font-size:16px; color:#444; line-height:1.6; text-align:left;">
+      <p>
+        Ratuu....sejak aku sakit hati aku mulai menyukai mu,dan kamu bilang dari awal kita ketemu kamu ada menyukai ku sedikit walau kamu memaksa untuk tidak terbawa sama perasaan itu karna aku lagi ngejar cwe lain.Pada akhirnya aku ditinggalin cwe yang aku kejar,terus kamu datang ngobatin aku.Dari situ aku mulai ada perasaan sama kamu,makin lama kita chatan makin muncul rasa suka.Kamu bikin aku salting teruss,kamu bikin aku meleleh muluuu.Kadang aku sih juga bikin kamu salting.huhhhh dari roblox cuman menyapa eh sampai titik ini,terimakasih yahh kamu udah bikin hari-hari ku bahagia bangetttttttt.Aku bertekad bikin kamu bahagia juga dimasa depan walau kita ldr-an... kuat-kuat yahh,yang sabarrrr... jadi malam ini adalah malam yang indah mungkin untukku karna ini pertama kali aku ngerasain perasaan ini setelah sekian lama aku mau.Aku buat ini bukan karna terpaksa,tapi karna aku cinta sama kamu dan mau buat ini jadi special. sooo itu aja yang aku mau sampein dari iki :D
+      </p>
+    </div>
+    <button onclick="next(2)">Lanjut</button>
+  </div>
+
+  <!-- SCREEN 3 -->
+  <div id="screen3" class="container fade hidden">
+    <h1>Jadi...mau ga jadi pacar aku? ❤️</h1>
+    <button onclick="accept()">Mau</button>
+    <button style="background:#ff2f6e; margin-left:10px;" onclick="accept()">Mau bangetttttt</button>
+  </div>
+
+<script>
+function next(step){
+  if(step === 1){ change('screen1','screen2'); }
+  if(step === 2){ change('screen2','screen3'); }
+}
+
+function change(hideId, showId){
+  const h = document.getElementById(hideId);
+  const s = document.getElementById(showId);
+
+  h.classList.remove('show');
+  setTimeout(()=>{
+    h.classList.add('hidden');
+    s.classList.remove('hidden');
+    setTimeout(()=>s.classList.add('show'), 10);
+  }, 400);
+}
+
+function accept() {
+  // 🔗 GANTI DENGAN LINK KAMU! (Contoh: WhatsApp, Google Form, dll)
+  const yourMessageLink = "https://example.com"; // ← SESUAIKAN DI SINI
+
+  document.getElementById('screen3').innerHTML = `
+    <h1>YEEEAAAAAA!!! 💖</h1>
+    <p>Makasih udah mau sama aku...<br>Aku bakal jaga kamu selalu ❤️</p>
+    <p style="margin-top:22px; font-size:16px; color:#444; line-height:1.5;">
+      Klik link ini kalo kamu ada pesan untuk pacar baru kamu
+    </p>
+    <a href="${yourMessageLink}" target="_blank" class="message-link">👉 Kirim Pesan Sekarang</a>
+  `;
+}
+</script>
+
+</body>
+</html>
